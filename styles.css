@@ -2,19 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root {
-    --laranja-claro: #FF862A;
+    --laranja-claro: #000000;
     --alto-contraste-fundo: #000000;
     --alto-contraste-texto: #ffffff;
     --alto-contraste-link: #ffd700;
 }
 
 body {
+    background-color: white;
     font-size: 1rem;
     font-family: 'Montserrat';
 }
 
 header {
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
 
@@ -24,13 +25,13 @@ section {
 
 
 .nav-link {
-    color: #CB6D43;
+    color: #ffffff;
     font-weight: 600;
 }
 
 .inicio-fundo {
     /* aula 3 */
-    background-image: url('https://github.com/GuiTzera/Acessiblidade-2025/blob/main/img/4965007.jpg?raw=true');
+    background-image: url('img/yuri_alberto_celebrando_gol_marcado_em_classico_n6xe.jpg');
     /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: right;
@@ -79,8 +80,8 @@ section {
     padding-top: 5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: url('img/flor.png') top right no-repeat,
-        url('img/flor-esquerda.png') bottom left no-repeat;
+    background: url('img/') top right no-repeat,
+        url('') bottom left no-repeat;
     background-size: 180px 180px;
     /* Ajuste o tamanho conforme necessário */
 }
