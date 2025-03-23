@@ -2,6 +2,23 @@ document.addEventListener('DOMContentLoaded', function(){
     const botaoDeAcessibilidade = document.getElementById('botao-acessibilidade')
     const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidade')
  
+    document.addEventListener("DOMContentLoaded", function () {
+        const botaoContraste = document.getElementById("alterna-contraste");
+        const footer = document.querySelector("footer");
+    
+        botaoContraste.addEventListener("click", function () {
+            document.body.classList.toggle("alto-contraste");
+    
+            // Verifica a cor de fundo do footer e ajusta a classe
+            const bgColor = window.getComputedStyle(footer).backgroundColor;
+            if (bgColor === "rgb(255, 255, 255)") { // Branco
+                footer.classList.add("fundo-branco");
+            } else {
+                footer.classList.remove("fundo-branco");
+            }
+        });
+    });    
+
     botaoDeAcessibilidade.addEventListener('click', function (){
      botaoDeAcessibilidade.classList.toggle('rotacao-botao');
      opcoesDeAcessibilidade.classList.toggle('apresenta-lista')

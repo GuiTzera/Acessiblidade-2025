@@ -5,7 +5,7 @@
     --laranja-claro: #000000;
     --alto-contraste-fundo: #000000;
     --alto-contraste-texto: #ffffff;
-    --alto-contraste-link: #ffd700;
+    --alto-contraste-link: #ffffff;
 }
 
 body {
@@ -27,6 +27,14 @@ section {
 .nav-link {
     color: #ffffff;
     font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #690b0b
+}
+
+.nav-link:active {
+    color: #690b0b
 }
 
 .inicio-fundo {
@@ -107,14 +115,14 @@ h2 {
     background-color: #FAF4F4;
 
 }
-
 .fundo-galeria {
-    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+    background: url('img/cocorintia.png') bottom right no-repeat;
     background-size: 180px 180px;
 }
 
+
 #contato {
-    background-image: url('img/4965007.jpg');
+    background-image: url('img/curtina.gif');
     background-size: cover;
     padding: 4rem 0;
     /* Espaçamento interno para a seção de contato */
@@ -153,6 +161,21 @@ h2 {
     transform-origin: right center;
 }
 
+:root {
+    --alto-contraste-fundo: #000; /* Fundo preto */
+    --alto-contraste-texto: #ffffff; /* Texto branco */
+    --alto-contraste-link: #ffffff; /* Amarelo para links e botões */
+}
+
+.alto-contraste h1,
+.alto-contraste h2,
+.alto-contraste h3,
+.alto-contraste h4,
+.alto-contraste h5,
+.alto-contraste h6 {
+    color: var(--alto-contraste-texto) !important; /* Define os títulos como brancos */
+}
+
 .opcoes-acessibilidade{
     margin-top:10px;
     display: flex;
@@ -171,11 +194,22 @@ h2 {
     color: var(--alto-contraste-texto);
 }
 
+
 .alto-contraste header,
 .alto-contraste footer,
 .alto-contraste .formulario{
     background-color: var(--alto-contraste-fundo);
     color: var(--alto-contraste-texto);
+}
+
+.alto-contraste footer {
+    background-color: #000000 !important; /* Mantém o fundo branco */
+    color: #ffffff !important; /* Garante que o texto fique preto */
+}
+
+.alto-contraste footer p,
+.alto-contraste footer i {
+    color: #ffffff !important; /* Ícones e parágrafos ficam pretos */
 }
 
 .alto-contraste .nav-link{
